@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DC2E5926396781D3828B00FC1CA891C4A671C191+++1CA6401",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++3FBD24E" : 0,
+    "DC2E5926396781D3828B00FC1CA891C4A671C191+++1CA6401" : 9223372036854775807,
+    "DC2E5926396781D3828B00FC1CA891C4A671C191+++08E2863" : 0,
+    "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++A82541F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "12CE1D7A-B96B-4241-84B8-96105CE59FA6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++3FBD24E" : "GEOSwiftMapboxGL-2.0",
+    "DC2E5926396781D3828B00FC1CA891C4A671C191+++1CA6401" : "GEOSwiftMapboxGL\/",
+    "DC2E5926396781D3828B00FC1CA891C4A671C191+++08E2863" : "GEOSwiftMapboxGL\/",
+    "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++A82541F" : "GEOSwiftMapboxGL-2.0"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GEOSwiftMapboxGL",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GEOSwiftMapboxGL.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreacremaschi\/Humboldt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++3FBD24E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreacremaschi\/Humboldt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D3AAB6EBC7EC5B08E85D630342328ECF681A6BE+++A82541F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andreacremaschi\/GEOSwiftMapboxGL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC2E5926396781D3828B00FC1CA891C4A671C191+++08E2863"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:GEOSwiftMapboxGL\/GEOSwiftMapboxGL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC2E5926396781D3828B00FC1CA891C4A671C191+++1CA6401"
+    }
+  ]
+}

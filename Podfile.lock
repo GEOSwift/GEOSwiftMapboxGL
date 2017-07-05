@@ -1,0 +1,20 @@
+PODS:
+  - geos (3.5.0)
+  - GEOSwift (0.5.1):
+    - GEOSwift/Core (= 0.5.1)
+  - GEOSwift/Core (0.5.1):
+    - geos (= 3.5.0)
+  - Mapbox-iOS-SDK (3.3.4)
+
+DEPENDENCIES:
+  - GEOSwift
+  - Mapbox-iOS-SDK
+
+SPEC CHECKSUMS:
+  geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
+  GEOSwift: 7a3e070ee189ea27d3bcb6ba5244bf69d4f953aa
+  Mapbox-iOS-SDK: b22da0d9703fcfb0a8b592b6a7f6a21264fe44b0
+
+PODFILE CHECKSUM: ab72b494530c13dc57e62fdeb5990f080ee54663
+
+COCOAPODS: 1.2.1
