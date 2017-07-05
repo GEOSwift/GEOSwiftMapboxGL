@@ -1,5 +1,3 @@
-![GEOSwiftMapboxGL](/README-images/GEOSwiftMapboxGL-header.png)  
-
 [![Build Status](https://travis-ci.org/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)](https://travis-ci.org/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL.svg)](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL.svg)
 
@@ -62,7 +60,7 @@ let shape2 = polygon.mapboxShape() // Will return a MGLPolygon
 In this table you can find which annotation class you should expect when calling `mapboxShape()` on a geometry:
 
 | WKT Feature | GEOSwift class | MapboxGL |
-|:------------------:|:-------------:|:-----------------:|:-----------------:|
+|:------------------:|:-------------:|:-----------------:|
 | `POINT` | `WayPoint` | `MGLPointAnnotation` |
 | `LINESTRING` | `LineString` | `MGLPolyline` |
 | `POLYGON` | `Polygon` | `MGLPolygon` |
