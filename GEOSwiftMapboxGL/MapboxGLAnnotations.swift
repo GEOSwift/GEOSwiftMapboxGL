@@ -37,19 +37,22 @@ extension Geometry : GEOSwiftMapboxGL {
             return polyline
             
         case is Polygon:
-            var exteriorRingCoordinates = (self as! Polygon).exteriorRing.points.map({ (point: Coordinate) ->
-                CLLocationCoordinate2D in
-                return CLLocationCoordinate2DFromCoordinate(point)
+          var exteriorRingCoordinates = (self as! Polygon).exteriorRing.points.map({ (point: Coordinate) ->
+            CLLocationCoordinate2D in
+            return CLLocationCoordinate2DFromCoordinate(point)
+          })
+          
+          let interiorRings = (self as! Polygon).interiorRings.map({ (linearRing: LinearRing) ->
+            MGLPolygon in
+            let pointer = linearRing.points.map({ (point: Coordinate) ->
+              CLLocationCoordinate2D in
+              return CLLocationCoordinate2DFromCoordinate(point)
             })
-            
-            // interior rings are not handled by MapBoxGL, we must drop this info!
-//            let interiorRings = (self as! Polygon).interiorRings.map({ (linearRing: LinearRing) ->
-//                MKPolygon in
-//                return MKPolygonWithCoordinatesSequence(linearRing.points)
-//            })
-            
-            let polygon = MGLPolygon(coordinates: &exteriorRingCoordinates, count: UInt(exteriorRingCoordinates.count) /*, interiorPolygons: interiorRings*/)
-            return polygon
+            return MGLPolygon(coordinates: pointer, count: UInt(linearRing.points.count))
+          })
+          
+          let polygon = MGLPolygon(coordinates: &exteriorRingCoordinates, count: UInt(exteriorRingCoordinates.count) , interiorPolygons: interiorRings)
+          return polygon
             
         default:
             let geometryCollectionOverlay = MGLShapesCollection(geometryCollection: (self as! GeometryCollection))
