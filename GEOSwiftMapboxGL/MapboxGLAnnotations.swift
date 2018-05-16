@@ -85,7 +85,13 @@ public class MGLShapesCollection : MGLShape, MGLOverlay {
             MGLShape in
             return geometry.mapboxShape()
         })
-        self.centroid = CLLocationCoordinate2DFromCoordinate(geometryCollection.centroid().coordinate)
+
+        if let coordinate = geometryCollection.centroid()?.coordinate {
+            self.centroid = CLLocationCoordinate2DFromCoordinate(coordinate)
+        } else {
+            self.centroid = CLLocationCoordinate2DFromCoordinate(CoordinateFromCLLocationCoordinate2D(CLLocationCoordinate2DMake(0, 0)))
+        }
+
         self.shapes = shapes
         
         if let envelope = geometryCollection.envelope() as? Polygon {
