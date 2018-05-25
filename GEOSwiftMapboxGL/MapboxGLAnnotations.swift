@@ -50,7 +50,13 @@ extension Geometry : GEOSwiftMapboxGL {
             
             let polygon = MGLPolygon(coordinates: &exteriorRingCoordinates, count: UInt(exteriorRingCoordinates.count) /*, interiorPolygons: interiorRings*/)
             return polygon
-            
+                                     
+        case is MultiPolygon<Polygon>:
+          let mglPolygons = (self as! MultiPolygon).geometries.map({ (polygon: Polygon) -> MGLPolygon in
+            return polygon.mapboxShape() as! MGLPolygon
+          })
+          return MGLMultiPolygon(polygons: mglPolygons) 
+                                     
         default:
             let geometryCollectionOverlay = MGLShapesCollection(geometryCollection: (self as! GeometryCollection))
             return geometryCollectionOverlay
