@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GEOSwiftMapboxGL"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "GEOSwiftMapboxGL is adds MapBoxGL to GEOSwift."
 
   s.homepage     = "https://github.com/GEOSwift/GEOSwiftMapboxGL"
