@@ -95,7 +95,7 @@ public class MGLShapesCollection : MGLShape, MGLOverlay {
         if let coordinate = geometryCollection.centroid()?.coordinate {
             self.centroid = CLLocationCoordinate2D(coordinate)
         } else {
-            self.centroid = CLLocationCoordinate2D(CLLocationCoordinate2D(CLLocationCoordinate2DMake(0, 0)))
+            self.centroid = CLLocationCoordinate2D(Coordinate(CLLocationCoordinate2DMake(0, 0)))
         }
 
         self.shapes = shapes
