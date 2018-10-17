@@ -1,24 +1,24 @@
 PODS:
-  - geos (3.5.0)
-  - GEOSwift (2.2.0):
-    - geos (= 3.5.0)
+  - geos (3.7.0)
+  - GEOSwift (3.0.0):
+    - geos (= 3.7.0)
   - Mapbox-iOS-SDK (4.0.1)
 
 DEPENDENCIES:
-  - GEOSwift
+  - GEOSwift (~> 3.0.0)
   - Mapbox-iOS-SDK
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - geos
     - GEOSwift
     - Mapbox-iOS-SDK
 
 SPEC CHECKSUMS:
-  geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
-  GEOSwift: 8633f4f613d8c010eec90d26a6b7efd15bb98a51
+  geos: de7d149482a5798a4b5cfda2f0dbabd5a23f2591
+  GEOSwift: 0e7ce382fd678b554f758b1320c24f913b875abc
   Mapbox-iOS-SDK: 09b978be732d753e5c5e2911460fc0a018ce9be6
 
-PODFILE CHECKSUM: ab72b494530c13dc57e62fdeb5990f080ee54663
+PODFILE CHECKSUM: c65f715fba3fbd3f80306a354ec265d1ea352ad2
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
