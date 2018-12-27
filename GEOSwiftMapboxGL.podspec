@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GEOSwiftMapboxGL"
-  s.version      = "1.0.1"
+  s.version      = "2.0.0"
   s.summary      = "GEOSwiftMapboxGL is adds MapBoxGL to GEOSwift."
 
   s.homepage     = "https://github.com/GEOSwift/GEOSwiftMapboxGL"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.dependency "GEOSwift", '~> 2.2'
-  s.dependency "Mapbox-iOS-SDK"
+  s.dependency "GEOSwift", '~> 3.0'
+  s.dependency "Mapbox-iOS-SDK", '~> 4.0'
 
 end
