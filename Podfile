@@ -1,14 +1,11 @@
-# Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 use_frameworks!
 
 target 'GEOSwiftMapboxGL' do
-  pod 'GEOSwift'
-  pod 'Mapbox-iOS-SDK'
+  pod 'GEOSwift', '~> 8.0'
+  pod 'Mapbox-iOS-SDK', '~> 6.0'
 end
 
 target 'GEOSwiftMapboxGLTests' do
-  pod 'GEOSwift'
-  pod 'Mapbox-iOS-SDK'
 end
