@@ -87,7 +87,7 @@ extension Geometry : GEOSwiftMapboxGL {
       }
   }
   
-    public func mapboxFeature() -> MGLFeature {
+  public func mapboxFeature() -> MGLShape & MGLFeature {
       switch self {
         case let .point(self):
             let pointAnno = MGLPointFeature()
