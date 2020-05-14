@@ -74,17 +74,13 @@ extension Geometry : GEOSwiftMapboxGL {
             return MGLPolygon(polygon: self)
 
         case let .multiPolygon(self):
-            let mglPolygons = self.polygons.map { MGLPolygon(polygon: $0)}
-            return MGLShapeCollection(shapes: mglPolygons)
-                                     
+            return MGLMultiPolygon(polygons: self.polygons.map(MGLPolygon.init))
         case let .geometryCollection(self):
-          let shapes = self.geometries.map { $0.mapboxShape() }
-          return MGLShapeCollection(shapes: shapes)
+            return MGLShapeCollection(shapes: self.geometries.map { $0.mapboxShape() })
         case let .multiPoint(self):
-          return MGLShapeCollection(shapes: self.points.map(MGLPointAnnotation.init))
+            return MGLShapeCollection(shapes: self.points.map(MGLPointAnnotation.init))
         case let .multiLineString(self):
-          let mglLines = self.lineStrings.map { MGLPolyline(lineString: $0) }
-          return MGLShapeCollection(shapes: mglLines)
+            return MGLMultiPolyline(polylines: self.lineStrings.map(MGLPolyline.init))
       }
   }
   
@@ -94,38 +90,27 @@ extension Geometry : GEOSwiftMapboxGL {
             let pointAnno = MGLPointFeature()
             pointAnno.coordinate = CLLocationCoordinate2D(self)
             return pointAnno
-            
         case let .lineString(self):
             var points = self.points.map({ CLLocationCoordinate2D($0)})
-            let polyline = MGLPolylineFeature(coordinates: &points, count: UInt(points.count))
-            return polyline
-
+            return MGLPolylineFeature(coordinates: &points, count: UInt(points.count))
         case let .polygon(self):
             var exteriorRingCoordinates = self.exterior.points.map({ CLLocationCoordinate2D($0) })
-            
             let interiorRings = self.holes.map { (linearRing: Polygon.LinearRing) -> MGLPolygon in
               var points = linearRing.points.map { CLLocationCoordinate2D($0) }
               return MGLPolygon(coordinates: &points, count: UInt(linearRing.points.count))
             }
-            
-            let polygon = MGLPolygonFeature(
+            return MGLPolygonFeature(
               coordinates: &exteriorRingCoordinates,
               count: UInt(exteriorRingCoordinates.count),
               interiorPolygons: interiorRings)
-            return polygon
-                                     
         case let .multiPolygon(self):
-            let mglPolygons = self.polygons.map { MGLPolygon(polygon: $0)}
-            return  MGLShapeCollectionFeature(shapes: mglPolygons)
-                                     
+            return  MGLMultiPolygonFeature(polygons: self.polygons.map(MGLPolygon.init))
         case let .geometryCollection(self):
-          let shapes = self.geometries.map { $0.mapboxShape() }
-          return MGLShapeCollectionFeature(shapes: shapes)
+            return MGLShapeCollectionFeature(shapes: self.geometries.map { $0.mapboxShape() })
         case let .multiPoint(self):
-          return MGLShapeCollectionFeature(shapes: self.points.map(MGLPointAnnotation.init))
+            return MGLShapeCollectionFeature(shapes: self.points.map(MGLPointAnnotation.init))
         case let .multiLineString(self):
-          let mglLines = self.lineStrings.map { MGLPolyline(lineString: $0) }
-          return MGLShapeCollectionFeature(shapes: mglLines)
+            return MGLMultiPolylineFeature(polylines: self.lineStrings.map(MGLPolyline.init))
       }
   }
 }
