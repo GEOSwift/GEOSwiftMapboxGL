@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)](https://travis-ci.org/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)
+[![Build Status](https://travis-ci.com/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)](https://travis-ci.com/GEOSwift/GEOSwiftMapboxGL.svg?branch=develop)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL.svg)](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL.svg)
 
 GEOSwiftMapboxGL makes it easy generate annotations to display on [MapboxGL](https://github.com/mapbox/mapbox-gl-native/).
