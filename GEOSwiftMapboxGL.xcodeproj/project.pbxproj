@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */; };
 		4923DDB025A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */; };
-		551999F5C39D78A8B1ED459F /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */; };
-		5F0DC22FA0C1CCBFD126C687 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */; };
 		7DF3A6F13BA744362BEF2CBF /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
 		81E4A0711F0C700F0073186F /* GEOSwift+MapboxGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */; };
-		85153DE5246CF89B008A695D /* geos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85153DE3246CF89B008A695D /* geos.framework */; };
-		85153DE7246CF89B008A695D /* GEOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85153DE4246CF89B008A695D /* GEOSwift.framework */; };
+		920156DEAED34A1B20C2B7E6 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */; };
+		B975A610C5DB9371A5797B37 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829EA709691EF8019E20CC9 /* Pods_GEOSwiftMapboxGLTests.framework */; };
 		CD20F1DD1B2830700045D8FD /* GEOSwiftMapboxGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD22998F1B10B506002C19AE /* GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; };
 		CDB7EC051B287CE70055835C /* GEOSwift+MapboxGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */; };
-		DA312B501383705279D8884F /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,27 +41,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		064004E2312FE3AA64F072FA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA7C58D26652404333EABF4 /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4829EA709691EF8019E20CC9 /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Equatable.swift"; sourceTree = "<group>"; };
-		4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; sourceTree = "<group>"; };
-		537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.release.xcconfig"; sourceTree = "<group>"; };
-		7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.debug.xcconfig"; sourceTree = "<group>"; };
+		7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.release.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.release.xcconfig"; sourceTree = "<group>"; };
 		81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapboxGL.swift"; sourceTree = "<group>"; };
 		81E4A0721F0C70790073186F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GEOSwiftMapboxGL/Info.plist; sourceTree = SOURCE_ROOT; };
-		85153DE2246CF84F008A695D /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
-		85153DE3246CF89B008A695D /* geos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = geos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85153DE4246CF89B008A695D /* GEOSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GEOSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD20F1DA1B282CC40045D8FD /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		B1BEA1A9238DFFBCEE141A17 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.release.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.release.xcconfig"; sourceTree = "<group>"; };
+		B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.debug.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22998E1B10B506002C19AE /* GEOSwiftMapboxGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GEOSwiftMapboxGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2299961B10B506002C19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapboxGLTests.swift"; sourceTree = "<group>"; };
-		CDDA8F591BE3E6DF007AA9EB /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
-		FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA312B501383705279D8884F /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
-				5F0DC22FA0C1CCBFD126C687 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
-				85153DE7246CF89B008A695D /* GEOSwift.framework in Frameworks */,
-				85153DE5246CF89B008A695D /* geos.framework in Frameworks */,
+				920156DEAED34A1B20C2B7E6 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,41 +71,31 @@
 			files = (
 				CD22998F1B10B506002C19AE /* GEOSwiftMapboxGL.framework in Frameworks */,
 				7DF3A6F13BA744362BEF2CBF /* (null) in Frameworks */,
-				335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
-				551999F5C39D78A8B1ED459F /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
+				B975A610C5DB9371A5797B37 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16F88BA0E437519EF7629362 /* Pods */ = {
+		AE175575FD135CECE9699D1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */,
-				FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */,
-				4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */,
-				537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */,
+				B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */,
+				7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */,
+				1DA7C58D26652404333EABF4 /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */,
+				B1BEA1A9238DFFBCEE141A17 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CD2299851B10B506002C19AE /* GEOSwiftMapboxGL */ = {
 			isa = PBXGroup;
 			children = (
-				CD25D7241B2732FE008B3FB3 /* Source */,
-				CD2299861B10B506002C19AE /* Supporting Files */,
-			);
-			name = GEOSwiftMapboxGL;
-			path = Humboldt;
-			sourceTree = "<group>";
-		};
-		CD2299861B10B506002C19AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
+				81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */,
 				81E4A0721F0C70790073186F /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = GEOSwiftMapboxGL;
 			sourceTree = "<group>";
 		};
 		CD2299941B10B506002C19AE /* GEOSwiftMapboxGLTests */ = {
@@ -128,27 +103,10 @@
 			children = (
 				4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */,
 				CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */,
-				CD2299951B10B506002C19AE /* Supporting Files */,
+				CD2299961B10B506002C19AE /* Info.plist */,
 			);
 			path = GEOSwiftMapboxGLTests;
 			sourceTree = "<group>";
-		};
-		CD2299951B10B506002C19AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD2299961B10B506002C19AE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CD25D7241B2732FE008B3FB3 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */,
-			);
-			name = Source;
-			path = GEOSwiftMapboxGL;
-			sourceTree = SOURCE_ROOT;
 		};
 		CD6533A81B0E0DFF00DE6D84 = {
 			isa = PBXGroup;
@@ -156,8 +114,8 @@
 				CD2299851B10B506002C19AE /* GEOSwiftMapboxGL */,
 				CD2299941B10B506002C19AE /* GEOSwiftMapboxGLTests */,
 				CD6533B21B0E0DFF00DE6D84 /* Products */,
-				F249FE82CF1F95FBFCF62C71 /* Frameworks */,
-				16F88BA0E437519EF7629362 /* Pods */,
+				AE175575FD135CECE9699D1C /* Pods */,
+				E727375004E2C0E3EEF2089A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,19 +128,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F249FE82CF1F95FBFCF62C71 /* Frameworks */ = {
+		E727375004E2C0E3EEF2089A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				85153DE3246CF89B008A695D /* geos.framework */,
-				85153DE4246CF89B008A695D /* GEOSwift.framework */,
-				85153DE2246CF84F008A695D /* Pods */,
-				CDDA8F591BE3E6DF007AA9EB /* Pods.framework */,
-				CD20F1DA1B282CC40045D8FD /* Pods.framework */,
-				064004E2312FE3AA64F072FA /* Pods.framework */,
-				B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */,
-				FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */,
-				89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */,
-				0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */,
+				BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */,
+				4829EA709691EF8019E20CC9 /* Pods_GEOSwiftMapboxGLTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,10 +214,9 @@
 			};
 			buildConfigurationList = CD6533AC1B0E0DFF00DE6D84 /* Build configuration list for PBXProject "GEOSwiftMapboxGL" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -391,7 +340,7 @@
 /* Begin XCBuildConfiguration section */
 		CD22999E1B10B506002C19AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */;
+			baseConfigurationReference = B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -419,7 +368,7 @@
 		};
 		CD22999F1B10B506002C19AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */;
+			baseConfigurationReference = 7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -443,7 +392,7 @@
 		};
 		CD2299A21B10B506002C19AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */;
+			baseConfigurationReference = 1DA7C58D26652404333EABF4 /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -461,7 +410,7 @@
 		};
 		CD2299A31B10B506002C19AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */;
+			baseConfigurationReference = B1BEA1A9238DFFBCEE141A17 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
