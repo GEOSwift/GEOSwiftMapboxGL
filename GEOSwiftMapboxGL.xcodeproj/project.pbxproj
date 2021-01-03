@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */; };
+		4923DDB025A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */; };
 		551999F5C39D78A8B1ED459F /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */; };
 		5F0DC22FA0C1CCBFD126C687 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */; };
 		7DF3A6F13BA744362BEF2CBF /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -16,16 +17,7 @@
 		85153DE7246CF89B008A695D /* GEOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85153DE4246CF89B008A695D /* GEOSwift.framework */; };
 		CD20F1DD1B2830700045D8FD /* GEOSwiftMapboxGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD22998F1B10B506002C19AE /* GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; };
-		CD2DE39E1B396FF400E7BCD4 /* feature.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFB1B3968B00092C6C6 /* feature.geojson */; };
-		CD2DE39F1B39750200E7BCD4 /* multipolygon.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */; };
-		CD2DE3A01B39750200E7BCD4 /* geometrycollection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */; };
-		CD2DE3A11B39750200E7BCD4 /* polygon.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CD0C44321B20368600E7B24E /* polygon.geojson */; };
-		CD2DE3A21B39750200E7BCD4 /* multipoint.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B3D1B16459A0044B3DD /* multipoint.geojson */; };
-		CD2DE3A31B39750200E7BCD4 /* featurecollection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */; };
-		CD2DE3A41B39750200E7BCD4 /* linestring.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFC1B3968B00092C6C6 /* linestring.geojson */; };
-		CD2DE3A51B39750200E7BCD4 /* multilinestring.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */; };
-		CD2DE3A61B39750200E7BCD4 /* point.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFE1B3968B00092C6C6 /* point.geojson */; };
-		CDB7EC051B287CE70055835C /* MapboxGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* MapboxGLTests.swift */; };
+		CDB7EC051B287CE70055835C /* GEOSwift+MapboxGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */; };
 		DA312B501383705279D8884F /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +47,7 @@
 /* Begin PBXFileReference section */
 		064004E2312FE3AA64F072FA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Equatable.swift"; sourceTree = "<group>"; };
 		4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,20 +58,11 @@
 		85153DE4246CF89B008A695D /* GEOSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GEOSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0C44321B20368600E7B24E /* polygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polygon.geojson; sourceTree = "<group>"; };
 		CD20F1DA1B282CC40045D8FD /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22998E1B10B506002C19AE /* GEOSwiftMapboxGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GEOSwiftMapboxGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2299961B10B506002C19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDA09FFB1B3968B00092C6C6 /* feature.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feature.geojson; sourceTree = "<group>"; };
-		CDA09FFC1B3968B00092C6C6 /* linestring.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linestring.geojson; sourceTree = "<group>"; };
-		CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multilinestring.geojson; sourceTree = "<group>"; };
-		CDA09FFE1B3968B00092C6C6 /* point.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = point.geojson; sourceTree = "<group>"; };
-		CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geometrycollection.geojson; sourceTree = "<group>"; };
-		CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = featurecollection.geojson; sourceTree = "<group>"; };
-		CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multipolygon.geojson; sourceTree = "<group>"; };
-		CDB71B3D1B16459A0044B3DD /* multipoint.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multipoint.geojson; sourceTree = "<group>"; };
-		CDB7EC041B287CE70055835C /* MapboxGLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxGLTests.swift; sourceTree = "<group>"; };
+		CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapboxGLTests.swift"; sourceTree = "<group>"; };
 		CDDA8F591BE3E6DF007AA9EB /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,16 +126,8 @@
 		CD2299941B10B506002C19AE /* GEOSwiftMapboxGLTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDB7EC041B287CE70055835C /* MapboxGLTests.swift */,
-				CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */,
-				CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */,
-				CD0C44321B20368600E7B24E /* polygon.geojson */,
-				CDB71B3D1B16459A0044B3DD /* multipoint.geojson */,
-				CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */,
-				CDA09FFB1B3968B00092C6C6 /* feature.geojson */,
-				CDA09FFC1B3968B00092C6C6 /* linestring.geojson */,
-				CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */,
-				CDA09FFE1B3968B00092C6C6 /* point.geojson */,
+				4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */,
+				CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */,
 				CD2299951B10B506002C19AE /* Supporting Files */,
 			);
 			path = GEOSwiftMapboxGLTests;
@@ -318,15 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2DE39F1B39750200E7BCD4 /* multipolygon.geojson in Resources */,
-				CD2DE3A01B39750200E7BCD4 /* geometrycollection.geojson in Resources */,
-				CD2DE3A41B39750200E7BCD4 /* linestring.geojson in Resources */,
-				CD2DE3A21B39750200E7BCD4 /* multipoint.geojson in Resources */,
-				CD2DE3A61B39750200E7BCD4 /* point.geojson in Resources */,
-				CD2DE3A51B39750200E7BCD4 /* multilinestring.geojson in Resources */,
-				CD2DE3A11B39750200E7BCD4 /* polygon.geojson in Resources */,
-				CD2DE3A31B39750200E7BCD4 /* featurecollection.geojson in Resources */,
-				CD2DE39E1B396FF400E7BCD4 /* feature.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB7EC051B287CE70055835C /* MapboxGLTests.swift in Sources */,
+				4923DDB025A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift in Sources */,
+				CDB7EC051B287CE70055835C /* GEOSwift+MapboxGLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

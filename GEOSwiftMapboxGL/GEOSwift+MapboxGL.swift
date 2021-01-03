@@ -9,22 +9,43 @@ public extension CLLocationCoordinate2D {
     }
 }
 
+public extension Point {
+    init(longitude: Double, latitude: Double) {
+        self.init(x: longitude, y: latitude)
+    }
+
+    init(_ coordinate: CLLocationCoordinate2D) {
+        self.init(x: coordinate.longitude, y: coordinate.latitude)
+    }
+}
+
+public extension GEOSwift.Polygon {
+    static let world = try! GEOSwift.Polygon(
+        exterior: Polygon.LinearRing(
+            points: [
+                Point(x: -180, y: 90),
+                Point(x: -180, y: -90),
+                Point(x: 180, y: -90),
+                Point(x: 180, y: 90),
+                Point(x: -180, y: 90)]))
+}
+
 public extension MGLPointAnnotation {
-    convenience init(_ point: Point) {
+    convenience init(point: Point) {
         self.init()
         self.coordinate = CLLocationCoordinate2D(point)
     }
 }
 
 public extension MGLPolyline {
-    convenience init(_ lineString: LineString) {
+    convenience init(lineString: LineString) {
         var points = lineString.points.map(CLLocationCoordinate2D.init)
         self.init(coordinates: &points, count: UInt(points.count))
     }
 }
 
 public extension MGLPolygon {
-    convenience init(_ polygon: Polygon) {
+    convenience init(polygon: GEOSwift.Polygon) {
         var exteriorCoordinates = polygon.exterior.points.map(CLLocationCoordinate2D.init)
         self.init(
             coordinates: &exteriorCoordinates,
@@ -32,76 +53,73 @@ public extension MGLPolygon {
             interiorPolygons: polygon.holes.map(MGLPolygon.init))
     }
 
-    convenience init(_ linearRing: Polygon.LinearRing) {
-        var exteriorCoordinates = linearRing.points.map(CLLocationCoordinate2D.init)
-        self.init(
-            coordinates: &exteriorCoordinates,
-            count: UInt(exteriorCoordinates.count))
+    convenience init(linearRing: GEOSwift.Polygon.LinearRing) {
+        var coordinates = linearRing.points.map(CLLocationCoordinate2D.init)
+        self.init(coordinates: &coordinates, count: UInt(coordinates.count))
     }
 }
 
 public extension MGLPointCollection {
-    convenience init(_ multiPoint: MultiPoint) {
+    convenience init(multiPoint: MultiPoint) {
         var coordinates = multiPoint.points.map(CLLocationCoordinate2D.init)
         self.init(coordinates: &coordinates, count: UInt(coordinates.count))
     }
 }
 
 public extension MGLMultiPolyline {
-    convenience init(_ multiLineString: MultiLineString) {
+    convenience init(multiLineString: MultiLineString) {
         self.init(polylines: multiLineString.lineStrings.map(MGLPolyline.init))
     }
 }
 
 public extension MGLMultiPolygon {
-    convenience init(_ multiPolygon: MultiPolygon) {
+    convenience init(multiPolygon: MultiPolygon) {
         self.init(polygons: multiPolygon.polygons.map(MGLPolygon.init))
     }
 }
 
 public extension MGLShapeCollection {
-    convenience init(_ geometryCollection: GeometryCollection) {
+    convenience init(geometryCollection: GeometryCollection) {
         self.init(shapes: geometryCollection.geometries.map(MGLShape.make))
     }
 }
 
 public extension MGLShape {
-
     static func make(with geometry: GeometryConvertible) -> MGLShape {
         switch geometry.geometry {
         case let .point(point):
-            return MGLPointAnnotation(point)
+            return MGLPointAnnotation(point: point)
         case let .lineString(lineString):
-            return MGLPolyline(lineString)
+            return MGLPolyline(lineString: lineString)
         case let .polygon(polygon):
-            return MGLPolygon(polygon)
+            return MGLPolygon(polygon: polygon)
         case let .multiPoint(multiPoint):
-            return MGLPointCollection(multiPoint)
+            return MGLPointCollection(multiPoint: multiPoint)
         case let .multiLineString(multiLineString):
-            return MGLMultiPolyline(multiLineString)
+            return MGLMultiPolyline(multiLineString: multiLineString)
         case let .multiPolygon(multiPolygon):
-            return MGLMultiPolygon(multiPolygon)
+            return MGLMultiPolygon(multiPolygon: multiPolygon)
         case let .geometryCollection(geometryCollection):
-            return MGLShapeCollection(geometryCollection)
+            return MGLShapeCollection(geometryCollection: geometryCollection)
         }
     }
 
     static func makeFeature(with geometry: GeometryConvertible) -> MGLShape & MGLFeature {
         switch geometry.geometry {
         case let .point(point):
-            return MGLPointFeature(point)
+            return MGLPointFeature(point: point)
         case let .lineString(lineString):
-            return MGLPolylineFeature(lineString)
+            return MGLPolylineFeature(lineString: lineString)
         case let .polygon(polygon):
-            return MGLPolygonFeature(polygon)
+            return MGLPolygonFeature(polygon: polygon)
         case let .multiPoint(multiPoint):
-            return MGLPointCollectionFeature(multiPoint)
+            return MGLPointCollectionFeature(multiPoint: multiPoint)
         case let .multiLineString(multiLineString):
-            return MGLMultiPolylineFeature(multiLineString)
+            return MGLMultiPolylineFeature(multiLineString: multiLineString)
         case let .multiPolygon(multiPolygon):
-            return MGLMultiPolygonFeature(multiPolygon)
+            return MGLMultiPolygonFeature(multiPolygon: multiPolygon)
         case let .geometryCollection(geometryCollection):
-            return MGLShapeCollectionFeature(geometryCollection)
+            return MGLShapeCollectionFeature(geometryCollection: geometryCollection)
         }
     }
 }
