@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.description  = <<~DESC
     Easily handle a geometric object model (points, linestrings, polygons etc.) and related
     topological operations (intersections, overlapping etc.). A type-safe, MIT-licensed Swift
-    interface to the OSGeo's GEOS library routines, nicely integrated with MapKit.
+    interface to the OSGeo's GEOS library routines, nicely integrated with MapboxGL.
   DESC
   s.homepage = 'https://github.com/GEOSwift/GEOSwiftMapboxGL'
   s.license = {
@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
     tag: s.version
   }
   s.source_files = 'GEOSwiftMapboxGL/*.{swift,h}'
-  s.macos.exclude_files = 'GEOSwiftMapKit/GEOSwift+MapKitQuickLook.swift'
   s.dependency 'GEOSwift', '~> 7.0'
   s.dependency 'Mapbox-iOS-SDK'
 end
