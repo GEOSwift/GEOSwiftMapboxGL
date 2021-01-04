@@ -1,5 +1,3 @@
-//  Copyright (c) 2017 GEOSwift. All rights reserved.
-
 import GEOSwift
 import GEOSwiftMapboxGL
 import Mapbox
@@ -93,11 +91,15 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLPolylineFeatureFromLineString() {
-        verifyMGLPolylineCreation(with: MGLPolylineFeature.init(lineString:), expectedType: MGLPolylineFeature.self)
+        verifyMGLPolylineCreation(
+            with: MGLPolylineFeature.init(lineString:),
+            expectedType: MGLPolylineFeature.self)
     }
 
     func testCreateMGLPolylineFeatureFromLineStringViaMGLShapeMakeFeature() {
-        verifyMGLPolylineCreation(with: MGLShape.makeFeature(with:), expectedType: MGLPolylineFeature.self)
+        verifyMGLPolylineCreation(
+            with: MGLShape.makeFeature(with:),
+            expectedType: MGLPolylineFeature.self)
     }
 
     // MGLPolygon
@@ -173,7 +175,9 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLPointCollectionFromMultiPoint() {
-        verifyMGLPointCollectionCreation(with: MGLPointCollection.init(multiPoint:), expectedType: MGLPointCollection.self)
+        verifyMGLPointCollectionCreation(
+            with: MGLPointCollection.init(multiPoint:),
+            expectedType: MGLPointCollection.self)
     }
 
     func testCreateMGLPointCollectionFromMultiPointViaMGLShapeMake() {
@@ -181,11 +185,15 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLPointCollectionFeatureFromMultiPoint() {
-        verifyMGLPointCollectionCreation(with: MGLPointCollectionFeature.init(multiPoint:), expectedType: MGLPointCollectionFeature.self)
+        verifyMGLPointCollectionCreation(
+            with: MGLPointCollectionFeature.init(multiPoint:),
+            expectedType: MGLPointCollectionFeature.self)
     }
 
     func testCreateMGLPointCollectionFeatureFromMultiPointViaMGLShapeMakeFeature() {
-        verifyMGLPointCollectionCreation(with: MGLShape.makeFeature(with:), expectedType: MGLPointCollectionFeature.self)
+        verifyMGLPointCollectionCreation(
+            with: MGLShape.makeFeature(with:),
+            expectedType: MGLPointCollectionFeature.self)
     }
 
     // MGLMultiPolyline
@@ -207,7 +215,9 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLMultiPolylineFromMultiLineString() {
-        verifyMGLMultiPolylineCreation(with: MGLMultiPolyline.init(multiLineString:), expectedType: MGLMultiPolyline.self)
+        verifyMGLMultiPolylineCreation(
+            with: MGLMultiPolyline.init(multiLineString:),
+            expectedType: MGLMultiPolyline.self)
     }
 
     func testCreateMGLMultiPolylineFromMultiLineStringViaMGLShapeMake() {
@@ -215,11 +225,15 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLMultiPolylineFeatureFromMultiLineString() {
-        verifyMGLMultiPolylineCreation(with: MGLMultiPolylineFeature.init(multiLineString:), expectedType: MGLMultiPolylineFeature.self)
+        verifyMGLMultiPolylineCreation(
+            with: MGLMultiPolylineFeature.init(multiLineString:),
+            expectedType: MGLMultiPolylineFeature.self)
     }
 
     func testCreateMGLMultiPolylineFeatureFromMultiLineStringViaMGLShapeMakeFeature() {
-        verifyMGLMultiPolylineCreation(with: MGLShape.makeFeature(with:), expectedType: MGLMultiPolylineFeature.self)
+        verifyMGLMultiPolylineCreation(
+            with: MGLShape.makeFeature(with:),
+            expectedType: MGLMultiPolylineFeature.self)
     }
 
     // MGLMultiPolygon
@@ -241,19 +255,27 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLMultiPolygonFromMultiPolygon() {
-        verifyMGLMultiPolygonCreation(with: MGLMultiPolygon.init(multiPolygon:), expectedType: MGLMultiPolygon.self)
+        verifyMGLMultiPolygonCreation(
+            with: MGLMultiPolygon.init(multiPolygon:),
+            expectedType: MGLMultiPolygon.self)
     }
 
     func testCreateMGLMultiPolygonFromMultiPolygonViaMGLShapeMake() {
-        verifyMGLMultiPolygonCreation(with: MGLShape.make(with:), expectedType: MGLMultiPolygon.self)
+        verifyMGLMultiPolygonCreation(
+            with: MGLShape.make(with:),
+            expectedType: MGLMultiPolygon.self)
     }
 
     func testCreateMGLMultiPolygonFeatureFromMultiPolygon() {
-        verifyMGLMultiPolygonCreation(with: MGLMultiPolygonFeature.init(multiPolygon:), expectedType: MGLMultiPolygonFeature.self)
+        verifyMGLMultiPolygonCreation(
+            with: MGLMultiPolygonFeature.init(multiPolygon:),
+            expectedType: MGLMultiPolygonFeature.self)
     }
 
     func testCreateMGLMultiPolygonFeatureFromMultiPolygonViaMGLShapeMakeFeature() {
-        verifyMGLMultiPolygonCreation(with: MGLShape.makeFeature(with:), expectedType: MGLMultiPolygonFeature.self)
+        verifyMGLMultiPolygonCreation(
+            with: MGLShape.makeFeature(with:),
+            expectedType: MGLMultiPolygonFeature.self)
     }
 
     // MGLShapeCollection
@@ -271,11 +293,16 @@ final class MapboxGLTests: XCTestCase {
         }
         XCTAssertEqual(shapeCollection.shapes.count, 1, line: line)
         XCTAssertTrue(shapeCollection.shapes.first is MGLPointAnnotation, line: line)
-        XCTAssertEqual(shapeCollection.shapes.first?.coordinate, CLLocationCoordinate2D(latitude: 1, longitude: 0), line: line)
+        XCTAssertEqual(
+            shapeCollection.shapes.first?.coordinate,
+            CLLocationCoordinate2D(latitude: 1, longitude: 0),
+            line: line)
     }
 
     func testCreateMGLShapeCollectionFromGeometryCollection() {
-        verifyMGLShapeCollectionCreation(with: MGLShapeCollection.init(geometryCollection:), expectedType: MGLShapeCollection.self)
+        verifyMGLShapeCollectionCreation(
+            with: MGLShapeCollection.init(geometryCollection:),
+            expectedType: MGLShapeCollection.self)
     }
 
     func testCreateMGLShapeCollectionFromGeometryCollectionViaMGLShapeMake() {
@@ -283,10 +310,14 @@ final class MapboxGLTests: XCTestCase {
     }
 
     func testCreateMGLShapeCollectionFeatureFromGeometryCollection() {
-        verifyMGLShapeCollectionCreation(with: MGLShapeCollectionFeature.init(geometryCollection:), expectedType: MGLShapeCollectionFeature.self)
+        verifyMGLShapeCollectionCreation(
+            with: MGLShapeCollectionFeature.init(geometryCollection:),
+            expectedType: MGLShapeCollectionFeature.self)
     }
 
     func testCreateMGLShapeCollectionFeatureFromGeometryCollectionViaMGLShapeMakeFeature() {
-        verifyMGLShapeCollectionCreation(with: MGLShape.makeFeature(with:), expectedType: MGLShapeCollectionFeature.self)
+        verifyMGLShapeCollectionCreation(
+            with: MGLShape.makeFeature(with:),
+            expectedType: MGLShapeCollectionFeature.self)
     }
 }

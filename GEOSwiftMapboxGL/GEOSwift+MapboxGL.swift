@@ -20,6 +20,7 @@ public extension Point {
 }
 
 public extension GEOSwift.Polygon {
+    // swiftlint:disable:next force_try
     static let world = try! GEOSwift.Polygon(
         exterior: Polygon.LinearRing(
             points: [
