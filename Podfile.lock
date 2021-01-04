@@ -1,6 +1,6 @@
 PODS:
-  - geos (5.0.0)
-  - GEOSwift (7.1.0):
+  - geos (5.1.0)
+  - GEOSwift (7.2.0):
     - geos (~> 5.0)
   - Mapbox-iOS-SDK (4.0.5)
 
@@ -15,8 +15,8 @@ SPEC REPOS:
     - Mapbox-iOS-SDK
 
 SPEC CHECKSUMS:
-  geos: e91fba0bb3497e3a8e68ca6103bddd45ec548e06
-  GEOSwift: 94dee5b6f18cac925ca9dd81b52a76628808d4ef
+  geos: 06708d21e83effc343a3c7123d4bd207185e050b
+  GEOSwift: 1aed09f3a98848017717d2402ac74df6c3ff3ee0
   Mapbox-iOS-SDK: c6bab367011e441e7345d4fe9340633c6b476bf4
 
 PODFILE CHECKSUM: b3e39d0cbe1a5f910234d228226d509f2a468c08
