@@ -1,7 +1,7 @@
 ---
 os: osx
 osx_image: xcode12.2
-language: minimal
+language: shell
 cache: cocoapods
 env: WORKSPACE=GEOSwiftMapboxGL.xcworkspace
      SCHEME=GEOSwiftMapboxGL
