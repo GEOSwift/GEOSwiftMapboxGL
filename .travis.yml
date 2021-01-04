@@ -6,7 +6,7 @@ cache: cocoapods
 env: WORKSPACE=GEOSwiftMapboxGL.xcworkspace
      SCHEME=GEOSwiftMapboxGL
      SDK=iphonesimulator14.2
-     DESTINATION="platform=iOS Simulator,OS=14.0,name=iPhone 11"
+     DESTINATION="platform=iOS Simulator,OS=14.2,name=iPhone 11"
 before_install:
   - brew upgrade swiftlint
   - gem install xcpretty cocoapods
