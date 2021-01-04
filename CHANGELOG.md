@@ -1,5 +1,4 @@
-## Develop
+## 2.0.0
 
-##### Breaking
-
-##### Enhancements
+* [#11](https://github.com/GEOSwift/GEOSwiftMapboxGL/pull/11) Updated to
+  GEOSwift 7
