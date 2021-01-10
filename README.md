@@ -3,7 +3,6 @@
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL)](https://cocoapods.org/pods/GEOSwiftMapboxGL)
 [![Supported Platforms](https://img.shields.io/cocoapods/p/GEOSwiftMapboxGL)](https://github.com/GEOSwift/GEOSwiftMapboxGL)
 [![Build Status](https://img.shields.io/travis/GEOSwift/GEOSwiftMapboxGL/main)](https://travis-ci.com/GEOSwift/GEOSwiftMapboxGL)
-[![Code Coverage](https://img.shields.io/codecov/c/github/GEOSwift/GEOSwiftMapboxGL/main)](https://codecov.io/gh/GEOSwift/GEOSwiftMapboxGL)
 
 See [GEOSwift](https://github.com/GEOSwift/GEOSwift) for full details
 
