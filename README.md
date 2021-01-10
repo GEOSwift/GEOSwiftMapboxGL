@@ -1,4 +1,4 @@
-# GEOSwiftMapKit
+# GEOSwiftMapboxGL
 
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL)](https://cocoapods.org/pods/GEOSwiftMapboxGL)
 [![Supported Platforms](https://img.shields.io/cocoapods/p/GEOSwiftMapboxGL)](https://github.com/GEOSwift/GEOSwiftMapboxGL)
