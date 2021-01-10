@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
     tag: s.version
   }
   s.source_files = 'GEOSwiftMapboxGL/*.{swift,h}'
-  s.dependency 'GEOSwift', '~> 7.0'
-  s.dependency 'Mapbox-iOS-SDK'
+  s.dependency 'GEOSwift', '~> 8.0'
+  s.dependency 'Mapbox-iOS-SDK', '>= 4.0'
 end

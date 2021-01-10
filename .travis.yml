@@ -1,25 +1,26 @@
 ---
 os: osx
-osx_image: xcode12.2
+osx_image: xcode12.3
 language: shell
 cache: cocoapods
-env: WORKSPACE=GEOSwiftMapboxGL.xcworkspace
-     SCHEME=GEOSwiftMapboxGL
-     SDK=iphonesimulator14.2
-     DESTINATION="platform=iOS Simulator,OS=14.2,name=iPhone 11"
+
 before_install:
   - brew upgrade swiftlint
   - gem install xcpretty cocoapods
+  - echo "machine api.mapbox.com
+      login mapbox
+      password $MAPBOX_SDK_REGISTRY_TOKEN" > ~/.netrc
   - pod repo update
   - pod install
 
 script:
   - set -o pipefail
+  - swiftlint
   - xcodebuild
-    -workspace "$WORKSPACE"
-    -scheme "$SCHEME"
-    -sdk "$SDK"
-    -destination "$DESTINATION"
+    -workspace GEOSwiftMapboxGL.xcworkspace
+    -scheme GEOSwiftMapboxGL
+    -sdk iphonesimulator14.3
+    -destination "platform=iOS Simulator,OS=14.3,name=iPhone 11"
     -configuration Debug
     ONLY_ACTIVE_ARCH=YES
     clean test | xcpretty -c;

@@ -1,24 +1,28 @@
 PODS:
-  - geos (5.1.0)
-  - GEOSwift (7.2.0):
-    - geos (~> 5.0)
-  - Mapbox-iOS-SDK (4.0.5)
+  - geos (6.0.1)
+  - GEOSwift (8.0.0):
+    - geos (~> 6.0)
+  - Mapbox-iOS-SDK (6.3.0):
+    - MapboxMobileEvents (~> 0.10.4)
+  - MapboxMobileEvents (0.10.7)
 
 DEPENDENCIES:
-  - GEOSwift
-  - Mapbox-iOS-SDK
+  - GEOSwift (~> 8.0)
+  - Mapbox-iOS-SDK (~> 6.0)
 
 SPEC REPOS:
   trunk:
     - geos
     - GEOSwift
     - Mapbox-iOS-SDK
+    - MapboxMobileEvents
 
 SPEC CHECKSUMS:
-  geos: 06708d21e83effc343a3c7123d4bd207185e050b
-  GEOSwift: 1aed09f3a98848017717d2402ac74df6c3ff3ee0
-  Mapbox-iOS-SDK: c6bab367011e441e7345d4fe9340633c6b476bf4
+  geos: aad71d89191a84344014c19326b937341368d6ab
+  GEOSwift: 253a86a01e28d0c7fd255c54dd69cd010abe7f67
+  Mapbox-iOS-SDK: 2563ed87ead6ec08f1c2090873977b8a7be335a8
+  MapboxMobileEvents: d0a581dedd8f47411cc65ea520b965e83914316e
 
-PODFILE CHECKSUM: b3e39d0cbe1a5f910234d228226d509f2a468c08
+PODFILE CHECKSUM: 79cb3f59076758c5878a1989eeeb18e396f758ff
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
