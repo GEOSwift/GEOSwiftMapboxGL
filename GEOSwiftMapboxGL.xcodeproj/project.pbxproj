@@ -3,28 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */; };
-		551999F5C39D78A8B1ED459F /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */; };
-		5F0DC22FA0C1CCBFD126C687 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */; };
-		7DF3A6F13BA744362BEF2CBF /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
-		81E4A0711F0C700F0073186F /* MapboxGLAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4A0701F0C700F0073186F /* MapboxGLAnnotations.swift */; };
+		0F41161864D62800802D55AB /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FA61624BE9448B8FC536C /* Pods_GEOSwiftMapboxGLTests.framework */; };
+		4923DDB025A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */; };
+		49F34ED725A2CDC8007F7170 /* GEOSwiftMapboxGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F34ED625A2CDC8007F7170 /* GEOSwiftMapboxGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DF3A6F13BA744362BEF2CBF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Weak, ); }; };
+		81E4A0711F0C700F0073186F /* GEOSwift+MapboxGL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */; };
+		920156DEAED34A1B20C2B7E6 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */; };
 		CD20F1DD1B2830700045D8FD /* GEOSwiftMapboxGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD22998F1B10B506002C19AE /* GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */; };
-		CD2DE39E1B396FF400E7BCD4 /* feature.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFB1B3968B00092C6C6 /* feature.geojson */; };
-		CD2DE39F1B39750200E7BCD4 /* multipolygon.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */; };
-		CD2DE3A01B39750200E7BCD4 /* geometrycollection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */; };
-		CD2DE3A11B39750200E7BCD4 /* polygon.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CD0C44321B20368600E7B24E /* polygon.geojson */; };
-		CD2DE3A21B39750200E7BCD4 /* multipoint.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B3D1B16459A0044B3DD /* multipoint.geojson */; };
-		CD2DE3A31B39750200E7BCD4 /* featurecollection.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */; };
-		CD2DE3A41B39750200E7BCD4 /* linestring.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFC1B3968B00092C6C6 /* linestring.geojson */; };
-		CD2DE3A51B39750200E7BCD4 /* multilinestring.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */; };
-		CD2DE3A61B39750200E7BCD4 /* point.geojson in Resources */ = {isa = PBXBuildFile; fileRef = CDA09FFE1B3968B00092C6C6 /* point.geojson */; };
-		CDB7EC051B287CE70055835C /* MapboxGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* MapboxGLTests.swift */; };
-		DA312B501383705279D8884F /* Pods_GEOSwiftMapboxGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */; };
+		CDB7EC051B287CE70055835C /* GEOSwift+MapboxGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,32 +42,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		064004E2312FE3AA64F072FA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; sourceTree = "<group>"; };
-		537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.release.xcconfig"; sourceTree = "<group>"; };
-		7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.debug.xcconfig"; sourceTree = "<group>"; };
-		81E4A0701F0C700F0073186F /* MapboxGLAnnotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxGLAnnotations.swift; sourceTree = "<group>"; };
+		271FA61624BE9448B8FC536C /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Equatable.swift"; sourceTree = "<group>"; };
+		49F34ED625A2CDC8007F7170 /* GEOSwiftMapboxGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOSwiftMapboxGL.h; sourceTree = "<group>"; };
+		7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.release.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.release.xcconfig"; sourceTree = "<group>"; };
+		81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapboxGL.swift"; sourceTree = "<group>"; };
 		81E4A0721F0C70790073186F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GEOSwiftMapboxGL/Info.plist; sourceTree = SOURCE_ROOT; };
-		89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD0C44321B20368600E7B24E /* polygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polygon.geojson; sourceTree = "<group>"; };
-		CD20F1DA1B282CC40045D8FD /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		93D58A4845B7F1FC4513E52F /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.debug.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF4BF3D45E0287ACD32E45A /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGLTests.release.xcconfig"; path = "Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD2299841B10B506002C19AE /* GEOSwiftMapboxGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GEOSwiftMapboxGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD22998E1B10B506002C19AE /* GEOSwiftMapboxGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GEOSwiftMapboxGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2299961B10B506002C19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDA09FFB1B3968B00092C6C6 /* feature.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feature.geojson; sourceTree = "<group>"; };
-		CDA09FFC1B3968B00092C6C6 /* linestring.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linestring.geojson; sourceTree = "<group>"; };
-		CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multilinestring.geojson; sourceTree = "<group>"; };
-		CDA09FFE1B3968B00092C6C6 /* point.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = point.geojson; sourceTree = "<group>"; };
-		CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geometrycollection.geojson; sourceTree = "<group>"; };
-		CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = featurecollection.geojson; sourceTree = "<group>"; };
-		CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multipolygon.geojson; sourceTree = "<group>"; };
-		CDB71B3D1B16459A0044B3DD /* multipoint.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multipoint.geojson; sourceTree = "<group>"; };
-		CDB7EC041B287CE70055835C /* MapboxGLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxGLTests.swift; sourceTree = "<group>"; };
-		CDDA8F591BE3E6DF007AA9EB /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
-		FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEOSwiftMapboxGLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEOSwiftMapboxGL.release.xcconfig"; path = "Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL.release.xcconfig"; sourceTree = "<group>"; };
+		CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GEOSwift+MapboxGLTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA312B501383705279D8884F /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
-				5F0DC22FA0C1CCBFD126C687 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
+				920156DEAED34A1B20C2B7E6 /* Pods_GEOSwiftMapboxGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,78 +72,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD22998F1B10B506002C19AE /* GEOSwiftMapboxGL.framework in Frameworks */,
-				7DF3A6F13BA744362BEF2CBF /* (null) in Frameworks */,
-				335C11A98B9F38F1FD0BADB2 /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
-				551999F5C39D78A8B1ED459F /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
+				7DF3A6F13BA744362BEF2CBF /* BuildFile in Frameworks */,
+				0F41161864D62800802D55AB /* Pods_GEOSwiftMapboxGLTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16F88BA0E437519EF7629362 /* Pods */ = {
+		AE175575FD135CECE9699D1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */,
-				FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */,
-				4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */,
-				537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */,
+				B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */,
+				7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */,
+				93D58A4845B7F1FC4513E52F /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */,
+				BEF4BF3D45E0287ACD32E45A /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		CD2299851B10B506002C19AE /* GEOSwiftMapboxGL */ = {
 			isa = PBXGroup;
 			children = (
-				CD25D7241B2732FE008B3FB3 /* Source */,
-				CD2299861B10B506002C19AE /* Supporting Files */,
-			);
-			name = GEOSwiftMapboxGL;
-			path = Humboldt;
-			sourceTree = "<group>";
-		};
-		CD2299861B10B506002C19AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
+				49F34ED625A2CDC8007F7170 /* GEOSwiftMapboxGL.h */,
+				81E4A0701F0C700F0073186F /* GEOSwift+MapboxGL.swift */,
 				81E4A0721F0C70790073186F /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = GEOSwiftMapboxGL;
 			sourceTree = "<group>";
 		};
 		CD2299941B10B506002C19AE /* GEOSwiftMapboxGLTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDB7EC041B287CE70055835C /* MapboxGLTests.swift */,
-				CDB71B3B1B16210C0044B3DD /* multipolygon.geojson */,
-				CDB0A9D51B21A5FD00AB2F46 /* geometrycollection.geojson */,
-				CD0C44321B20368600E7B24E /* polygon.geojson */,
-				CDB71B3D1B16459A0044B3DD /* multipoint.geojson */,
-				CDB71B391B15FFEC0044B3DD /* featurecollection.geojson */,
-				CDA09FFB1B3968B00092C6C6 /* feature.geojson */,
-				CDA09FFC1B3968B00092C6C6 /* linestring.geojson */,
-				CDA09FFD1B3968B00092C6C6 /* multilinestring.geojson */,
-				CDA09FFE1B3968B00092C6C6 /* point.geojson */,
-				CD2299951B10B506002C19AE /* Supporting Files */,
+				4923DDAF25A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift */,
+				CDB7EC041B287CE70055835C /* GEOSwift+MapboxGLTests.swift */,
+				CD2299961B10B506002C19AE /* Info.plist */,
 			);
 			path = GEOSwiftMapboxGLTests;
 			sourceTree = "<group>";
-		};
-		CD2299951B10B506002C19AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD2299961B10B506002C19AE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CD25D7241B2732FE008B3FB3 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				81E4A0701F0C700F0073186F /* MapboxGLAnnotations.swift */,
-			);
-			name = Source;
-			path = GEOSwiftMapboxGL;
-			sourceTree = SOURCE_ROOT;
 		};
 		CD6533A81B0E0DFF00DE6D84 = {
 			isa = PBXGroup;
@@ -173,8 +117,8 @@
 				CD2299851B10B506002C19AE /* GEOSwiftMapboxGL */,
 				CD2299941B10B506002C19AE /* GEOSwiftMapboxGLTests */,
 				CD6533B21B0E0DFF00DE6D84 /* Products */,
-				F249FE82CF1F95FBFCF62C71 /* Frameworks */,
-				16F88BA0E437519EF7629362 /* Pods */,
+				AE175575FD135CECE9699D1C /* Pods */,
+				E727375004E2C0E3EEF2089A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,16 +131,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F249FE82CF1F95FBFCF62C71 /* Frameworks */ = {
+		E727375004E2C0E3EEF2089A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDDA8F591BE3E6DF007AA9EB /* Pods.framework */,
-				CD20F1DA1B282CC40045D8FD /* Pods.framework */,
-				064004E2312FE3AA64F072FA /* Pods.framework */,
-				B7BE8B8564B5063CCA6CC117 /* Pods_GEOSwiftMapboxGL.framework */,
-				FC30B2E0DB51B308F3F23D7D /* Pods_GEOSwiftMapboxGLTests.framework */,
-				89BE20128818B970E4AC2198 /* Pods_GEOSwiftMapboxGL.framework */,
-				0AD09AA7006799E426866956 /* Pods_GEOSwiftMapboxGLTests.framework */,
+				BB4D65F51B322334180273FF /* Pods_GEOSwiftMapboxGL.framework */,
+				271FA61624BE9448B8FC536C /* Pods_GEOSwiftMapboxGLTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,6 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F34ED725A2CDC8007F7170 /* GEOSwiftMapboxGL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,11 +159,11 @@
 			buildConfigurationList = CD22999D1B10B506002C19AE /* Build configuration list for PBXNativeTarget "GEOSwiftMapboxGL" */;
 			buildPhases = (
 				62A7A265A251663EAA88D507 /* [CP] Check Pods Manifest.lock */,
-				CD22997F1B10B506002C19AE /* Sources */,
+				49F34EDA25A2CE56007F7170 /* Swiftlint */,
 				CD2299811B10B506002C19AE /* Headers */,
-				CD2299821B10B506002C19AE /* Resources */,
+				CD22997F1B10B506002C19AE /* Sources */,
 				36BA490CD3061F30F02CD17A /* Frameworks */,
-				8C03586B494390F2C4BBEA17 /* [CP] Copy Pods Resources */,
+				CD2299821B10B506002C19AE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -238,13 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD2299A11B10B506002C19AE /* Build configuration list for PBXNativeTarget "GEOSwiftMapboxGLTests" */;
 			buildPhases = (
-				606455065DF6A2BCFFD35B84 /* [CP] Check Pods Manifest.lock */,
+				075BDE9DDBD28CC47ED492A0 /* [CP] Check Pods Manifest.lock */,
 				CD22998A1B10B506002C19AE /* Sources */,
 				CD22998B1B10B506002C19AE /* Frameworks */,
 				CD22998C1B10B506002C19AE /* Resources */,
 				CD20F1DC1B2830600045D8FD /* CopyFiles */,
-				DE7797CE079BC339662037BC /* [CP] Embed Pods Frameworks */,
-				899F3C1F74F9FFEA3B25EDE1 /* [CP] Copy Pods Resources */,
+				E3F34168A69072FEEEB43BE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,7 +202,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = GEOSwift;
 				TargetAttributes = {
 					CD2299831B10B506002C19AE = {
@@ -280,7 +219,7 @@
 			};
 			buildConfigurationList = CD6533AC1B0E0DFF00DE6D84 /* Build configuration list for PBXProject "GEOSwiftMapboxGL" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -309,34 +248,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2DE39F1B39750200E7BCD4 /* multipolygon.geojson in Resources */,
-				CD2DE3A01B39750200E7BCD4 /* geometrycollection.geojson in Resources */,
-				CD2DE3A41B39750200E7BCD4 /* linestring.geojson in Resources */,
-				CD2DE3A21B39750200E7BCD4 /* multipoint.geojson in Resources */,
-				CD2DE3A61B39750200E7BCD4 /* point.geojson in Resources */,
-				CD2DE3A51B39750200E7BCD4 /* multilinestring.geojson in Resources */,
-				CD2DE3A11B39750200E7BCD4 /* polygon.geojson in Resources */,
-				CD2DE3A31B39750200E7BCD4 /* featurecollection.geojson in Resources */,
-				CD2DE39E1B396FF400E7BCD4 /* feature.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		606455065DF6A2BCFFD35B84 /* [CP] Check Pods Manifest.lock */ = {
+		075BDE9DDBD28CC47ED492A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GEOSwiftMapboxGLTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F34EDA25A2CE56007F7170 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint autocorrect\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		62A7A265A251663EAA88D507 /* [CP] Check Pods Manifest.lock */ = {
@@ -345,58 +302,40 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GEOSwiftMapboxGL-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		899F3C1F74F9FFEA3B25EDE1 /* [CP] Copy Pods Resources */ = {
+		E3F34168A69072FEEEB43BE5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C03586B494390F2C4BBEA17 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GEOSwiftMapboxGL/Pods-GEOSwiftMapboxGL-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE7797CE079BC339662037BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GEOSwift/GEOSwift.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
+				"${BUILT_PRODUCTS_DIR}/geos/geos.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GEOSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/geos.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GEOSwiftMapboxGLTests/Pods-GEOSwiftMapboxGLTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -406,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E4A0711F0C700F0073186F /* MapboxGLAnnotations.swift in Sources */,
+				81E4A0711F0C700F0073186F /* GEOSwift+MapboxGL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB7EC051B287CE70055835C /* MapboxGLTests.swift in Sources */,
+				4923DDB025A16F1D006C646D /* CLLocationCoordinate2D+Equatable.swift in Sources */,
+				CDB7EC051B287CE70055835C /* GEOSwift+MapboxGLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,85 +371,55 @@
 /* Begin XCBuildConfiguration section */
 		CD22999E1B10B506002C19AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D7DCB36E4FE6316A656A43A /* Pods-GEOSwiftMapboxGL.debug.xcconfig */;
+			baseConfigurationReference = B490EC6AD7B2D0B81B11F492 /* Pods-GEOSwiftMapboxGL.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LIBRARY = "compiler-default";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = GEOSwiftMapboxGL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GEOSwift.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = geoswift.GEOSwiftMapboxGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		CD22999F1B10B506002C19AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF90076F32D911E63EE5ACA5 /* Pods-GEOSwiftMapboxGL.release.xcconfig */;
+			baseConfigurationReference = 7453BDA3D41142DB76361201 /* Pods-GEOSwiftMapboxGL.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LIBRARY = "compiler-default";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GEOSwiftMapboxGL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GEOSwift.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = geoswift.GEOSwiftMapboxGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		CD2299A21B10B506002C19AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4929BC7A1B0BE392CD9BD0CD /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */;
+			baseConfigurationReference = 93D58A4845B7F1FC4513E52F /* Pods-GEOSwiftMapboxGLTests.debug.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "compiler-default";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = GEOSwiftMapboxGLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GEOSwift.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = geoswift.GEOSwiftMapboxGLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CD2299A31B10B506002C19AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 537B2F7965DB5ECD6E1CFB64 /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */;
+			baseConfigurationReference = BEF4BF3D45E0287ACD32E45A /* Pods-GEOSwiftMapboxGLTests.release.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "compiler-default";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GEOSwiftMapboxGLTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.GEOSwift.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = geoswift.GEOSwiftMapboxGLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -517,26 +427,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -544,18 +462,18 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -563,26 +481,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -590,10 +516,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
