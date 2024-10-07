@@ -1,3 +1,5 @@
+This project is no longer maintained. Please migrate to https://github.com/GEOSwift/GEOSwiftMapboxMaps
+
 # GEOSwiftMapboxGL
 
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/GEOSwiftMapboxGL)](https://cocoapods.org/pods/GEOSwiftMapboxGL)
